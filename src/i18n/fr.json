@@ -1,0 +1,183 @@
+{
+  "app": {
+    "loading": "Chargement de BrowserClaw...",
+    "title": "BrowserClaw"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "chat": "Chat",
+    "models": "Modèles",
+    "integrations": "Intégrations",
+    "config": "Paramètres",
+    "logs": "Journaux"
+  },
+  "common": {
+    "on": "ON",
+    "off": "OFF",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "finish": "Terminer",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "warning": "Attention",
+    "info": "Info"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "subtitle": "Vue d'ensemble de votre agent IA",
+    "noModel": "Aucun modèle",
+    "stats": {
+      "tasks": "Tâches aujourd'hui",
+      "memory": "Mémoire",
+      "uptime": "Temps de fonctionnement",
+      "model": "Modèle actif"
+    },
+    "status": {
+      "title": "Statut",
+      "routing": "Mode de routage",
+      "privacy": "Mode privé",
+      "workers": "Workers",
+      "database": "Base de données",
+      "running": "En cours",
+      "connected": "Connecté"
+    },
+    "activity": {
+      "title": "Activité récente",
+      "message": "Nouveau message reçu",
+      "modelLoaded": "Modèle chargé",
+      "taskCompleted": "Tâche terminée",
+      "memoryUpdated": "Mémoire mise à jour"
+    },
+    "quickActions": "Actions rapides",
+    "actions": {
+      "startChat": "Démarrer un chat",
+      "downloadModel": "Télécharger un modèle",
+      "configure": "Configurer"
+    }
+  },
+  "chat": {
+    "title": "Chat",
+    "subtitle": "Discutez avec votre agent IA",
+    "welcome": "Bienvenue !",
+    "startMessage": "Envoyez un message pour commencer la conversation.",
+    "placeholder": "Écrivez votre message...",
+    "send": "Envoyer",
+    "voice": "Message vocal",
+    "clear": "Effacer la conversation",
+    "export": "Exporter la conversation",
+    "confirmClear": "Êtes-vous sûr de vouloir effacer cette conversation ?",
+    "disclaimer": "Vos messages sont traités localement dans votre navigateur.",
+    "error": "Désolé, une erreur s'est produite. Veuillez réessayer.",
+    "micError": "Impossible d'accéder au microphone.",
+    "typing": "L'agent écrit..."
+  },
+  "models": {
+    "title": "Modèles",
+    "subtitle": "Gérez vos modèles d'IA",
+    "tabs": {
+      "local": "Modèles locaux",
+      "cloud": "Fournisseurs cloud",
+      "hfapi": "API HuggingFace"
+    },
+    "categories": {
+      "all": "Tous",
+      "llm": "LLM",
+      "whisper": "Whisper"
+    },
+    "search": "Rechercher des modèles...",
+    "download": "Télécharger",
+    "downloading": "Téléchargement...",
+    "setActive": "Définir comme actif",
+    "active": "Actif",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce modèle ?",
+    "noCloudProviders": "Aucun fournisseur cloud configuré",
+    "configureProviders": "Configurez des clés API dans les paramètres pour voir les modèles cloud.",
+    "fetch": "Rechercher",
+    "modelNotFound": "Modèle non trouvé",
+    "viewOnHF": "Voir sur HuggingFace"
+  },
+  "integrations": {
+    "title": "Intégrations",
+    "subtitle": "Connectez BrowserClaw à vos services externes",
+    "categories": {
+      "channel": "Canaux",
+      "dev": "Outils de développement",
+      "knowledge": "Connaissance",
+      "data": "Données",
+      "productivity": "Productivité",
+      "project": "Projet",
+      "payments": "Paiements",
+      "communication": "Communication",
+      "audio": "Audio",
+      "search": "Recherche",
+      "information": "Information"
+    },
+    "active": "Actif",
+    "inactive": "Inactif",
+    "capabilities": "Capacités",
+    "test": "Tester",
+    "testing": "Test en cours...",
+    "success": "Succès",
+    "failed": "Échec",
+    "docs": "Documentation",
+    "activeCount": "Intégrations actives"
+  },
+  "config": {
+    "title": "Paramètres",
+    "subtitle": "Configurez votre agent IA",
+    "tabs": {
+      "soul": "Âme",
+      "apikeys": "Clés API",
+      "routing": "Routage",
+      "privacy": "Confidentialité"
+    },
+    "save": "Enregistrer",
+    "saved": "Enregistré !",
+    "saveError": "Erreur lors de l'enregistrement",
+    "reset": "Réinitialiser",
+    "soul": {
+      "name": "Nom de l'agent",
+      "language": "Langue",
+      "personality": "Personnalité",
+      "goals": "Objectifs",
+      "addGoal": "Ajouter un objectif",
+      "skills": "Compétences"
+    },
+    "apikeys": {
+      "encryption": "Chiffrement",
+      "passphrase": "Passphrase (optionnel)",
+      "encryptionHelp": "Si défini, vos clés API seront chiffrées avec cette passphrase."
+    },
+    "routing": {
+      "mode": "Mode de routage",
+      "auto": "Automatique",
+      "local": "Local uniquement",
+      "cloud": "Cloud uniquement",
+      "threshold": "Seuil de complexité",
+      "thresholdHelp": "Les tâches avec une complexité supérieure à ce seuil seront envoyées au cloud.",
+      "privacyMode": "Mode privé (toujours local)"
+    },
+    "privacy": {
+      "backup": "Sauvegarde",
+      "backupDesc": "Exportez toutes vos données pour les sauvegarder.",
+      "export": "Exporter les données",
+      "restore": "Restauration",
+      "restoreDesc": "Importez une sauvegarde précédente.",
+      "wipe": "Effacer toutes les données",
+      "wipeDesc": "Cette action est irréversible. Toutes vos données seront supprimées.",
+      "wipeButton": "Effacer les données",
+      "confirmWipe": "Êtes-vous absolument sûr ? Cette action est irréversible.",
+      "dataWiped": "Données effacées avec succès.",
+      "wipeError": "Erreur lors de l'effacement des données.",
+      "dataImported": "Données importées avec succès.",
+      "importError": "Erreur lors de l'importation des données."
+    }
+  }
+}
