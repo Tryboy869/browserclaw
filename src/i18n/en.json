@@ -1,0 +1,183 @@
+{
+  "app": {
+    "loading": "Loading BrowserClaw...",
+    "title": "BrowserClaw"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "chat": "Chat",
+    "models": "Models",
+    "integrations": "Integrations",
+    "config": "Settings",
+    "logs": "Logs"
+  },
+  "common": {
+    "on": "ON",
+    "off": "OFF",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Info"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of your AI agent",
+    "noModel": "No model",
+    "stats": {
+      "tasks": "Tasks today",
+      "memory": "Memory",
+      "uptime": "Uptime",
+      "model": "Active model"
+    },
+    "status": {
+      "title": "Status",
+      "routing": "Routing mode",
+      "privacy": "Privacy mode",
+      "workers": "Workers",
+      "database": "Database",
+      "running": "Running",
+      "connected": "Connected"
+    },
+    "activity": {
+      "title": "Recent Activity",
+      "message": "New message received",
+      "modelLoaded": "Model loaded",
+      "taskCompleted": "Task completed",
+      "memoryUpdated": "Memory updated"
+    },
+    "quickActions": "Quick Actions",
+    "actions": {
+      "startChat": "Start Chat",
+      "downloadModel": "Download Model",
+      "configure": "Configure"
+    }
+  },
+  "chat": {
+    "title": "Chat",
+    "subtitle": "Chat with your AI agent",
+    "welcome": "Welcome!",
+    "startMessage": "Send a message to start the conversation.",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "voice": "Voice message",
+    "clear": "Clear conversation",
+    "export": "Export conversation",
+    "confirmClear": "Are you sure you want to clear this conversation?",
+    "disclaimer": "Your messages are processed locally in your browser.",
+    "error": "Sorry, an error occurred. Please try again.",
+    "micError": "Could not access microphone.",
+    "typing": "Agent is typing..."
+  },
+  "models": {
+    "title": "Models",
+    "subtitle": "Manage your AI models",
+    "tabs": {
+      "local": "Local Models",
+      "cloud": "Cloud Providers",
+      "hfapi": "HuggingFace API"
+    },
+    "categories": {
+      "all": "All",
+      "llm": "LLM",
+      "whisper": "Whisper"
+    },
+    "search": "Search models...",
+    "download": "Download",
+    "downloading": "Downloading...",
+    "setActive": "Set as Active",
+    "active": "Active",
+    "confirmDelete": "Are you sure you want to delete this model?",
+    "noCloudProviders": "No cloud providers configured",
+    "configureProviders": "Configure API keys in settings to see cloud models.",
+    "fetch": "Fetch",
+    "modelNotFound": "Model not found",
+    "viewOnHF": "View on HuggingFace"
+  },
+  "integrations": {
+    "title": "Integrations",
+    "subtitle": "Connect BrowserClaw to your external services",
+    "categories": {
+      "channel": "Channels",
+      "dev": "Developer Tools",
+      "knowledge": "Knowledge",
+      "data": "Data",
+      "productivity": "Productivity",
+      "project": "Project",
+      "payments": "Payments",
+      "communication": "Communication",
+      "audio": "Audio",
+      "search": "Search",
+      "information": "Information"
+    },
+    "active": "Active",
+    "inactive": "Inactive",
+    "capabilities": "Capabilities",
+    "test": "Test",
+    "testing": "Testing...",
+    "success": "Success",
+    "failed": "Failed",
+    "docs": "Documentation",
+    "activeCount": "Active integrations"
+  },
+  "config": {
+    "title": "Settings",
+    "subtitle": "Configure your AI agent",
+    "tabs": {
+      "soul": "Soul",
+      "apikeys": "API Keys",
+      "routing": "Routing",
+      "privacy": "Privacy"
+    },
+    "save": "Save",
+    "saved": "Saved!",
+    "saveError": "Error saving",
+    "reset": "Reset",
+    "soul": {
+      "name": "Agent Name",
+      "language": "Language",
+      "personality": "Personality",
+      "goals": "Goals",
+      "addGoal": "Add Goal",
+      "skills": "Skills"
+    },
+    "apikeys": {
+      "encryption": "Encryption",
+      "passphrase": "Passphrase (optional)",
+      "encryptionHelp": "If set, your API keys will be encrypted with this passphrase."
+    },
+    "routing": {
+      "mode": "Routing Mode",
+      "auto": "Automatic",
+      "local": "Local Only",
+      "cloud": "Cloud Only",
+      "threshold": "Complexity Threshold",
+      "thresholdHelp": "Tasks with complexity above this threshold will be sent to cloud.",
+      "privacyMode": "Privacy Mode (always local)"
+    },
+    "privacy": {
+      "backup": "Backup",
+      "backupDesc": "Export all your data for backup.",
+      "export": "Export Data",
+      "restore": "Restore",
+      "restoreDesc": "Import a previous backup.",
+      "wipe": "Wipe All Data",
+      "wipeDesc": "This action is irreversible. All your data will be deleted.",
+      "wipeButton": "Wipe Data",
+      "confirmWipe": "Are you absolutely sure? This action is irreversible.",
+      "dataWiped": "Data wiped successfully.",
+      "wipeError": "Error wiping data.",
+      "dataImported": "Data imported successfully.",
+      "importError": "Error importing data."
+    }
+  }
+}
