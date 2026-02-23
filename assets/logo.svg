@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">BrowserWasp Logo</title>
+  <style>
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#1A1A2E"/>
+    </linearGradient>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="wingGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer pulse ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="85;95;85" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Wings - left -->
+  <g transform="translate(100,80)" filter="url(#wingGlow)">
+    <animateTransform attributeName="transform" type="rotate"
+      values="-5 0 0; -25 0 0; -5 0 0" dur="0.3s" repeatCount="indefinite"/>
+    <ellipse cx="-35" cy="-10" rx="30" ry="12" fill="url(#wingGrad)" opacity="0.8"/>
+    <ellipse cx="-30" cy="5" rx="22" ry="9" fill="url(#wingGrad)" opacity="0.6"/>
+  </g>
+
+  <!-- Wings - right -->
+  <g transform="translate(100,80)" filter="url(#wingGlow)">
+    <animateTransform attributeName="transform" type="rotate"
+      values="5 0 0; 25 0 0; 5 0 0" dur="0.3s" repeatCount="indefinite"/>
+    <ellipse cx="35" cy="-10" rx="30" ry="12" fill="url(#wingGrad)" opacity="0.8"/>
+    <ellipse cx="30" cy="5" rx="22" ry="9" fill="url(#wingGrad)" opacity="0.6"/>
+  </g>
+
+  <!-- Body - wasp abdomen segments -->
+  <g filter="url(#glow)">
+    <!-- Head -->
+    <circle cx="100" cy="68" r="16" fill="#1A1A2E"/>
+    <!-- Eyes -->
+    <circle cx="94" cy="65" r="4" fill="#F59E0B"/>
+    <circle cx="106" cy="65" r="4" fill="#F59E0B"/>
+    <circle cx="94" cy="65" r="2" fill="#FEF3C7"/>
+    <circle cx="106" cy="65" r="2" fill="#FEF3C7"/>
+    <!-- Antennae -->
+    <path d="M94,53 Q85,38 80,30" stroke="#F59E0B" stroke-width="1.5" fill="none" stroke-linecap="round">
+      <animate attributeName="d" values="M94,53 Q85,38 80,30;M94,53 Q87,36 83,28;M94,53 Q85,38 80,30" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="80" cy="30" r="2" fill="#F59E0B"/>
+    <path d="M106,53 Q115,38 120,30" stroke="#F59E0B" stroke-width="1.5" fill="none" stroke-linecap="round">
+      <animate attributeName="d" values="M106,53 Q115,38 120,30;M106,53 Q113,36 117,28;M106,53 Q115,38 120,30" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="120" cy="30" r="2" fill="#F59E0B"/>
+    <!-- Thorax -->
+    <ellipse cx="100" cy="88" rx="14" ry="12" fill="#D97706"/>
+    <!-- Abdomen segments -->
+    <ellipse cx="100" cy="107" rx="16" ry="10" fill="#1A1A2E"/>
+    <ellipse cx="100" cy="107" rx="16" ry="4" fill="#F59E0B" transform="translate(0,-3)"/>
+    <ellipse cx="100" cy="121" rx="15" ry="10" fill="#1A1A2E"/>
+    <ellipse cx="100" cy="121" rx="15" ry="4" fill="#F59E0B" transform="translate(0,-3)"/>
+    <ellipse cx="100" cy="134" rx="13" ry="9" fill="#1A1A2E"/>
+    <ellipse cx="100" cy="134" rx="13" ry="4" fill="#F59E0B" transform="translate(0,-3)"/>
+    <!-- Stinger -->
+    <path d="M100,143 Q98,152 100,158 Q102,152 100,143" fill="#D97706"/>
+  </g>
+
+  <!-- Legs -->
+  <g stroke="#D97706" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M87,90 Q70,95 60,103"><animate attributeName="d" values="M87,90 Q70,95 60,103;M87,90 Q72,92 62,100;M87,90 Q70,95 60,103" dur="0.6s" repeatCount="indefinite"/></path>
+    <path d="M113,90 Q130,95 140,103"><animate attributeName="d" values="M113,90 Q130,95 140,103;M113,90 Q128,92 138,100;M113,90 Q130,95 140,103" dur="0.6s" repeatCount="indefinite"/></path>
+    <path d="M86,100 Q68,108 56,118"><animate attributeName="d" values="M86,100 Q68,108 56,118;M86,100 Q70,105 58,115;M86,100 Q68,108 56,118" dur="0.6s" begin="0.1s" repeatCount="indefinite"/></path>
+    <path d="M114,100 Q132,108 144,118"><animate attributeName="d" values="M114,100 Q132,108 144,118;M114,100 Q130,105 142,115;M114,100 Q132,108 144,118" dur="0.6s" begin="0.1s" repeatCount="indefinite"/></path>
+    <path d="M86,112 Q70,122 60,134"><animate attributeName="d" values="M86,112 Q70,122 60,134;M86,112 Q72,120 62,132;M86,112 Q70,122 60,134" dur="0.6s" begin="0.2s" repeatCount="indefinite"/></path>
+    <path d="M114,112 Q130,122 140,134"><animate attributeName="d" values="M114,112 Q130,122 140,134;M114,112 Q128,120 138,132;M114,112 Q130,122 140,134" dur="0.6s" begin="0.2s" repeatCount="indefinite"/></path>
+  </g>
+
+  <!-- Hover float animation on whole wasp -->
+  <animateTransform attributeName="transform" type="translate"
+    values="0,0; 0,-4; 0,0" dur="2s" repeatCount="indefinite" additive="sum"/>
+</svg>
